@@ -1,6 +1,6 @@
 # Pi Agent Playground
 
-A curated collection of assets, extensions, and configurations for the [pi coding agent](https://github.com/mariozechner/pi-coding-agent). This repository serves as a personal yet publicly available toolkit for working with pi productively.
+A curated collection of assets, extensions, and configurations for the [pi coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent). This repository serves as a personal yet publicly available toolkit for working with pi productively.
 
 ## Repository Structure
 
@@ -29,4 +29,4 @@ A curated collection of assets, extensions, and configurations for the [pi codin
 
 ## Resources
 
-- [pi Coding Agent Documentation](https://github.com/mariozechner/pi-coding-agent)
+- [pi Coding Agent Documentation](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent)
