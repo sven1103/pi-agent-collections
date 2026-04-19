@@ -1,16 +1,33 @@
 # Pi Agent Playground
 
-Welcome to the Pi Agent Playground! This repository is a sandbox environment for experimenting with and exploring the capabilities of pi, a coding agent harness.
+A curated collection of assets, extensions, and configurations for the [pi coding agent](https://github.com/mariozechner/pi-coding-agent). This repository serves as a personal yet publicly available toolkit for working with pi productively.
 
-## Overview
+## Repository Structure
 
-This playground provides a space to test and develop coding agents using the pi framework. Here you can explore various agent configurations, test different prompts, and learn how to build effective coding assistants.
+```
+├── .pi/                    # Pi agent configuration
+├── extensions/
+│   ├── README.md           # Extension documentation
+│   └── nvim-tmux/          # Neovim + Tmux integration extension
+│       ├── index.ts        # Extension implementation
+│       └── README.md       # Extension-specific docs
+├── LICENSE
+└── README.md               # This file
+```
+
+## What's Inside
+
+| Directory | Purpose |
+|-----------|---------|
+| `.pi/` | Pi agent configuration files |
+| `extensions/` | Custom pi extensions (e.g., nvim-tmux workflow) |
+| `extensions/nvim-tmux/` | Seamless neovim editing with tmux pane integration |
 
 ## Getting Started
 
-1. Install dependencies
-2. Configure your environment
-3. Start experimenting
+1. **Explore extensions** — Check `extensions/README.md` for available plugins
+2. **Install extensions** — Follow extension-specific setup instructions
+3. **Configure pi** — Adjust `.pi/` settings as needed
 
 ## Resources
 
