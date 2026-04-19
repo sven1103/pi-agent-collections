@@ -42,8 +42,6 @@ Extensions are auto-discovered. After copying:
 1. Start or restart Pi
 2. Or run `/reload` to hot-reload extensions
 
-## Available Extensions
-
 ### nvim-tmux
 
 Open files from Pi conversations in nvim, integrated with tmux for flexible window layouts.
@@ -76,6 +74,21 @@ pi
 - `Ctrl+Shift+S` - Last file in horizontal split
 
 See the extension's directory for full documentation.
+
+### plan-toggle
+
+Toggle between full coding mode and read-only question-answering mode.
+
+**Quick Start:**
+```bash
+/plan on          # Enable read-only mode
+/plan off         # Disable and return to full mode
+/plan             # Toggle
+```
+
+**Status:** When active, shows `[PLAN]` in the footer. Attempting to use `write`, `edit`, or `bash` is blocked with a warning notification.
+
+See [plan-toggle.md](plan-toggle.md) for full documentation.
 
 ## Extension Development
 
