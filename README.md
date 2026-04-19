@@ -5,7 +5,6 @@ A curated collection of assets, extensions, and configurations for the [pi codin
 ## Repository Structure
 
 ```
-├── .pi/                    # Pi agent configuration
 ├── extensions/
 │   ├── README.md           # Extension documentation
 │   └── nvim-tmux/          # Neovim + Tmux integration extension
@@ -19,7 +18,6 @@ A curated collection of assets, extensions, and configurations for the [pi codin
 
 | Directory | Purpose |
 |-----------|---------|
-| `.pi/` | Pi agent configuration files |
 | `extensions/` | Custom pi extensions (e.g., nvim-tmux workflow) |
 | `extensions/nvim-tmux/` | Seamless neovim editing with tmux pane integration |
 
@@ -31,5 +29,4 @@ A curated collection of assets, extensions, and configurations for the [pi codin
 
 ## Resources
 
-- [Main Documentation](https://github.com/mariozechner/pi-coding-agent)
-- [Examples and Extensions](https://github.com/mariozechner/pi-coding-agent/examples)
+- [pi Coding Agent Documentation](https://github.com/mariozechner/pi-coding-agent)
