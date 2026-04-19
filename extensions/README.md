@@ -6,16 +6,12 @@ This directory contains extensions for [Pi](https://github.com/badlogic/pi-mono)
 
 ### Option 1: Global Installation (Recommended)
 
-Copy the extension directory to Pi's global extensions folder:
+Copy extension files to Pi's global extensions folder:
 
 ```bash
-# Copy the extension directory
 mkdir -p ~/.pi/agent/extensions
-
-cp -r nvim-tmux ~/.pi/agent/extensions/
-
-# Or symlink for development
-ln -s $(pwd)/nvim-tmux ~/.pi/agent/extensions/
+cp nvim-tmux.ts ~/.pi/agent/extensions/
+cp plan-toggle.ts ~/.pi/agent/extensions/
 ```
 
 ### Option 2: Project-Local Installation
@@ -24,7 +20,8 @@ Copy to your project's `.pi/extensions/` directory:
 
 ```bash
 mkdir -p .pi/extensions
-cp -r nvim-tmux .pi/extensions/
+cp nvim-tmux.ts .pi/extensions/
+cp plan-toggle.ts .pi/extensions/
 ```
 
 ### Option 3: Direct Testing
@@ -32,7 +29,7 @@ cp -r nvim-tmux .pi/extensions/
 Test an extension without installing:
 
 ```bash
-pi -e ./nvim-tmux/index.ts
+pi -e ./nvim-tmux.ts
 ```
 
 ## Activation
@@ -41,6 +38,8 @@ Extensions are auto-discovered. After copying:
 
 1. Start or restart Pi
 2. Or run `/reload` to hot-reload extensions
+
+## Available Extensions
 
 ### nvim-tmux
 
@@ -73,7 +72,7 @@ pi
 - `Ctrl+Shift+V` - Last file in vertical split
 - `Ctrl+Shift+S` - Last file in horizontal split
 
-See the extension's directory for full documentation.
+See [nvim-tmux.md](nvim-tmux.md) for full documentation.
 
 ### plan-toggle
 
@@ -107,15 +106,16 @@ See [Pi's extension documentation](https://github.com/badlogic/pi-mono/blob/main
 
 ### File Structure
 
+Extensions are single `.ts` files loaded via [jiti](https://github.com/unjs/jiti) - no compilation needed.
+
 ```
 extensions/
 ├── README.md              # This file
-└── nvim-tmux/            # Extension directory
-    ├── index.ts          # Entry point (required)
-    └── README.md         # Extension-specific docs (optional)
+├── nvim-tmux.ts           # Extension implementation
+├── nvim-tmux.md           # Documentation
+├── plan-toggle.ts         # Extension implementation
+└── plan-toggle.md         # Documentation
 ```
-
-Extensions are TypeScript files loaded via [jiti](https://github.com/unjs/jiti) - no compilation needed.
 
 ## Security Warning
 

@@ -7,9 +7,8 @@ A curated collection of assets, extensions, and configurations for the [pi codin
 ```
 ├── extensions/
 │   ├── README.md           # Extension documentation
-│   ├── nvim-tmux/         # Neovim + Tmux integration extension
-│   │   ├── index.ts       # Extension implementation
-│   │   └── README.md      # Extension-specific docs
+│   ├── nvim-tmux.ts       # Neovim + Tmux integration
+│   ├── nvim-tmux.md       # Extension docs
 │   ├── plan-toggle.ts     # Plan mode toggle (read-only Q&A)
 │   └── plan-toggle.md     # Extension documentation
 ├── LICENSE
@@ -21,7 +20,7 @@ A curated collection of assets, extensions, and configurations for the [pi codin
 | Directory | Purpose |
 |-----------|---------|
 | `extensions/` | Custom pi extensions (e.g., nvim-tmux workflow) |
-| `extensions/nvim-tmux/` | Seamless neovim editing with tmux pane integration |
+| `extensions/nvim-tmux.ts` | Seamless neovim editing with tmux pane integration |
 | `extensions/plan-toggle.ts` | Read-only plan mode for Q&A without file modifications |
 
 ## Getting Started
