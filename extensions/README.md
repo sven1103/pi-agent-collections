@@ -120,3 +120,7 @@ extensions/
 ## Security Warning
 
 Extensions run with your full system permissions. Only install extensions from sources you trust. Review the code before installing.
+
+## Related
+
+- [Skills directory](../skills/) - Reusable capability packages for specialized tasks

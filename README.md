@@ -5,12 +5,18 @@ A curated collection of assets, extensions, and configurations for the [pi codin
 ## Repository Structure
 
 ```
-├── extensions/
-│   ├── README.md           # Extension documentation
+├── extensions/            # Custom pi extensions
+│   ├── README.md          # Extension documentation
 │   ├── nvim-tmux.ts       # Neovim + Tmux integration
 │   ├── nvim-tmux.md       # Extension docs
 │   ├── plan-toggle.ts     # Plan mode toggle (read-only Q&A)
 │   └── plan-toggle.md     # Extension documentation
+├── skills/                # Skills for specialized workflows
+│   ├── README.md          # Skill documentation
+│   └── github-cli/        # GitHub CLI integration (issues, PRs)
+│       ├── SKILL.md       # Skill instructions
+│       └── scripts/
+│           └── gh-helper.sh  # Helper script
 ├── LICENSE
 └── README.md               # This file
 ```
@@ -22,12 +28,15 @@ A curated collection of assets, extensions, and configurations for the [pi codin
 | `extensions/` | Custom pi extensions (e.g., nvim-tmux workflow) |
 | `extensions/nvim-tmux.ts` | Seamless neovim editing with tmux pane integration |
 | `extensions/plan-toggle.ts` | Read-only plan mode for Q&A without file modifications |
+| `skills/` | Reusable skills for specialized tasks |
+| `skills/github-cli/` | Query GitHub issues, PRs, and repos via `gh` CLI |
 
 ## Getting Started
 
 1. **Explore extensions** — Check `extensions/README.md` for available plugins
 2. **Install extensions** — Follow extension-specific setup instructions
-3. **Configure pi** — Adjust `.pi/` settings as needed
+3. **Explore skills** — Check `skills/README.md` for available skills
+4. **Install skills** — Copy to your `.pi/skills/` or `~/.pi/agent/skills/` directory
 
 ## Resources
 
